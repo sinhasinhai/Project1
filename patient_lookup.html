@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Patient lookup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home-nurse-body">
+    <div class="container"><br />
+        <h4><b>Patient Lookup</b></h4>
+        <div class="row  row-bgcolor">
+            <div class="col-sm-12">
+
+                <form action="patient_record.html">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <h5>Existing Patient</h5>
+                            <!--<input type="number" class="form-control" id="mobile_number" placeholder="MRN/Mobile Number" name="mobileno" >-->
+                            
+                            
+                             <input type="text" id="mobile_number" name="mobileno" data-validation="number" data-validation-allowing="negative,number" input name="color" data-validation="number" datavalidation-ignore="$" required="required" class="form-control" id="phone_no" placeholder="MRN/Mobile Number" maxlength="10" minlength="10" pattern="\d*">
+                            
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="col-sm-3">
+                        <button class="btn btn-primary search-button" type="submit">Search</button>
+                    </div>
+
+                    <div class="col-sm-6"></div>
+                </form>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+        </div>
+        <br />
+        
+        
+      
+        <div class="row row-bgcolor">
+          <form action="">   
+
+            <div class="col-sm-12">
+                <h5 class="head5">New Patient - Register</h5>
+                <div class="col-sm-3">
+                    <div class="form-group">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" class="form-control" id="fname" name="fname" required>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" class="form-control" id="lname" name="lname" required>
+                    </div>
+                </div>
+                <div class="col-sm-6"></div>
+                <br /><br /><br />
+            </div>
+
+            <div class="col-sm-12">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="dob">Date Of Birth</label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="mobileno">Mobile Number</label>
+                        <!--<input type="number" class="form-control" id="mobileno" name="mobileno">-->
+                        
+                        
+                         <input type="text" id="mobileno" name="mobileno" data-validation="number" data-validation-allowing="negative,number" input name="color" data-validation="number" datavalidation-ignore="$" required="required" class="form-control" id="phone_no" placeholder="Phone Number" maxlength="10" minlength="10" pattern="\d*">
+                        
+                        
+                    </div>
+                </div>
+                
+                <div class="col-sm-12"> 
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="mobileno">Aadhar Number</label>
+                        <!--<input type="number" class="form-control" id="mobileno" name="mobileno">-->
+                        
+                        
+                         <input type="text" id="Aadharno" name="Aadharno" data-validation="number" data-validation-allowing="negative,number" input name="color" data-validation="number" datavalidation-ignore="$" required="required" class="form-control" id="phone_no" placeholder="Aadhar Number" maxlength="12" minlength="12" pattern="\d*"><br><br>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="col-sm-6"></div>
+                <br><br /><br>
+            </div>
+            
+            <div class="col-sm-12">
+              
+                <div class="col-sm-2">
+                    <button class="btn btn-success" type="submit" formaction="patient_record.html">Register</button>
+                </div>
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8"></div>
+               
+                <br/><br/><br/><br/><br/>  
+            </div>
+             </form> 
+        </div> 
+    </div>
+
+</body>
+</html>

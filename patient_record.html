@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Patient Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body class="home-nurse-body">
+
+    <div class="container container-bg">
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home" class="tab_color">Patient Data</a></li>
+            <li><a data-toggle="tab" href="#menu1" class="tab_color">History</a></li>
+
+
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10">
+                        <div class="col-sm-12"><br>
+                            <!--<form action="procedure_chief_complaints.html">-->
+                            
+                                    <div class="col-sm-5"><br>
+                                        <table>
+
+                                            <tr >
+                                                <td>First Name</td>
+                                                <td name=First_Name id="First_Name"> </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Last Name</td>
+                                                <td name=Last_Name id="Last_Name"></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Date of Birth</td>
+                                                <td name=DOB id="DOB"></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Mobile Number</td>
+                                                <td name=Mobile_Number id="Mobile_Number"></td>
+
+                                            </tr>
+                                        </table><br/>
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5 patientrecord_bgc"><br>
+                                        <table>
+
+                                            <tr>
+                                                <td>Date</td>
+                                                <td>Patient Name</td>
+                                                <td>Doc Name</td>
+                                                <td><a href="" role="button"  class="btn btn-info" name="view-reports" id="view_reports">view Reports</a></td>
+                                               <!-- <td>< a href="" button type="submit"  class="btn btn-primary" name="view-report" id="view-report" >View Report</td>-->
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Date</td>
+                                                <td>Patient Name</td>
+                                                <td>Doc Name</td>
+                                                 <td><a href="" role="button"  class="btn btn-info" name="view-reports" id="view_reports">view Reports</a></td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Date</td>
+                                                <td>Patient Name</td>
+                                                <td>Doc Name</td>
+                                                <td><a href="" role="button"  class="btn btn-info" name="view-reports" id="view_reports">view Reports</a></td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Date</td>
+                                                <td>Patient Name</td>
+                                                <td>Doc Name</td>
+                                                 <td><a href="" role="button"  class="btn btn-info" name="view-reports" id="view_reports">view Reports</a></td>
+
+                                            </tr>
+
+
+
+                                        </table><br/>
+                                    </div>
+                                   <a href="procedure_chief_complaints.html" role="button" class="btn btn-info">Add chief complaints</a>
+                                   
+                                   <a role="button" data-toggle="tab" href="#menu1" class=" btn btn-info ">History</a>
+                                   
+                                   <!--<a href="#menu1" action="/menu1" role="button"  class="btn btn-info">Add History</a>-->
+                                    <!--<button type="submit" class="btn btn-info" onclick="procedure_chiefcomplaints.html" >Add Chief Complaints</button>
+                                    <button class="btn btn-success" type="submit" onclick="patient_record.html">Add History</button>-->
+                                    <br/>
+                                    <br/>
+                                <!--</form>-->
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <div class="container">
+                    <div class="row">
+                     <form action="procedure_chief_complaints.html">
+                        <div class="col-sm-12"><br><br>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="abortion">Abortion</label>
+                                    <input type="text" class="form-control" id="abortion" name="abortion">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="first-child-birth">Age at first Child Birth</label>
+                                    <input type="number" class="form-control" id="first_child_birth" name="child_birth">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6"></div>
+                            <br/><br /><br/>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="menarche-age">Age at Menarche</label>
+                                    <input type="number" class="form-control" id="menarche_age" name="menarche_age">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="age-at-marriage">Age at Marriage</label>
+                                    <input type="number" class="form-control" id="age_at_marriage" name="age_marriage">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6"></div>
+                            <br/><br /><br/>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="menorrhagia">Menorrhagia</label>
+                                    <input type="text" class="form-control" id="menorrhagia" name="menorrhagia">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="smoke" >Smoking</label>
+                                    <div class="dropdown">
+                                        <!--<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Option
+                                            <span class="caret" name="smoke" id="smoke"></span></button>-->
+                                            
+                                        <!--<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Yes</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">No</a></li>
+                                        </ul>-->
+                                        <select>
+                                        <option name="smoke" id="smoke">Select option</option>
+                                          <option name="smoke" id="smoke">YES</option>
+                                          <option name="smoke" id="smoke">NO</option>
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                            <div class="col-sm-6"></div>
+                            <br/><br /><br/>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="pwd">Vaginal Bleeding</label>
+                                    <div class="dropdown">
+                                        <!--<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Option
+                                            <span class="caret" name="bleeding" id="bleeding"></span></button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Yes</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">No</a></li>
+                                        </ul>-->
+                                        <select>
+                                        <option name="bleeding" id="bleeding">Select option</option>
+                                          <option name="bleeding" id="bleeding">YES</option>
+                                          <option name="bleeding" id="bleeding">NO</option>
+                                        </select>
+                                        
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="pwd">Alcohol</label>
+                                    <div class="dropdown">
+                                        <!--<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" name="alcohol" id="alcohal">Select Option
+                                            <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Yes</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">No</a></li>
+                                        </ul>-->
+                                        <select>
+                                        <option name="alcohol" id="alcohal">Select option</option>
+                                          <option name="alcohol" id="alcohal">YES</option>
+                                          <option name="alcohol" id="alcohal">NO</option>
+                                        </select>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6"></div>
+                            <br/><br /><br/>
+                        </div>
+                        <br/><br/>
+                        <div class="col-sm-12">
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Update History</button>
+                            </div>
+
+                            <div class="col-sm-2">
+
+                            </div>
+
+                            <div class="col-sm-8"></div>
+                            <br/><br/><br/><br/>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body></html>
